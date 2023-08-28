@@ -1,0 +1,16 @@
+Description of an E-commerce website;
+An E-commerce Backend that is built on node.js runtime, powered by express framework. It utilizes MongoDb, NoSequel database. It also uses cloudinary.
+
+
+##API
+SignUp user
+Login User
+GetAllUsers
+updateUsers 
+
+
+##PRODUCTS
+create product
+delete product
+replace product
+Update product
