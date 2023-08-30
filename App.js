@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import dbConnect from "./config/database.js";
 import logger from "morgan";
 import cors from "cors";
+import userRouter from "./routes/userRoute.js"
 
 dotenv.config()
 
@@ -14,6 +15,12 @@ app.use(express.json())
 app.use(logger("dev"))
 app.use(cors())
 app.use(express.urlencoded({extended:false}))
+
+
+app.use("/api/users", userRouter)
+
+
+
 
 app.get("/", (req, res) => {
     res.json({message: "API is running"})
